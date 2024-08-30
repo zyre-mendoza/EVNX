@@ -1,0 +1,242 @@
+:root {
+    --primary-color: #ff4f37;
+    --main-font: "Montserrat", sans-serif;
+    --spacing: 10px;
+    --dropdown-bg: #f4f4f4;
+}
+
+
+
+.section-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+
+.header-title {
+    font-size: clamp(16px, 2vw, 30px);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0 20px;
+    color: #333;
+    position: relative;
+    z-index: 2;  
+    font-weight: 300;
+}
+
+/* Style for the arrows */
+.arrow-left,
+.arrow-right {
+    font-size: 16px;
+    color: #aaa;
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for arrows */
+.arrow-left:hover,
+.arrow-right:hover {
+    color: #333;
+}
+
+/* Style for the background number */
+.background-number {
+    position: absolute;
+    font-size: 80px;
+    font-weight: bold;
+    color: #dbdbdb;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; 
+}
+
+.products-container {
+    margin-top: 100px;
+}
+
+
+.product-carousel {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 50px auto;
+
+}
+
+.product-carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: calc(100% * 5 / 3); 
+}
+
+
+.card {
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin: 20px auto; 
+    position: relative;
+    transition: all 0.3s ease;
+    max-width: 400px;
+}
+
+/* Card title styling */
+.card-title {
+    font-size: 20px;
+    font-weight: 300;
+    color: #888;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+/* Styling for card info container */
+.card-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+/* Styling for the left side (price and button) */
+.left-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 120px;
+    margin-top: 10px;
+}
+
+/* Styling for the price */
+.card-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+/* Styling for the button */
+.buy-now {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    margin-top: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button hover effect */
+.buy-now:hover {
+    background-color: #e64a19;
+    transform: translateY(-2px);
+}
+
+/* Image styling */
+.card img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    height: auto;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+
+
+/* Expanded card styling */
+.expanded-card {
+    max-width: 700px; 
+    flex: 0 0 40%;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: visible;
+}
+
+.expanded-card .card-info {
+    padding-left: 50px;
+    transition: 0.5s;
+}
+
+.expanded-card img {
+    width: 400px;
+    max-width: 450px;
+    z-index: 0;
+    bottom: -70px;
+}
+
+.expanded-card .big {
+    width: 300px;
+    z-index: 0;
+    bottom: -70px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .card {
+    box-shadow: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 100% !important; 
+    overflow: hidden;
+}
+    .product-carousel-inner {
+        width: 100%; 
+         overflow: hidden;
+    }
+
+  
+    .card-info {
+        align-items: flex-start; 
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .buy-now {
+        margin: 0;
+    }
+    .card img {
+        width: 240px; 
+        margin: 10px 0 0 0;    
+        padding: 0; 
+        top: 0;
+    }
+
+    .card .big {
+        width: 190px; 
+        margin: 10px 0 0 0;    
+        padding: 0; 
+        top: 0;
+    }
+
+    .left-info {
+        align-items: flex-start; 
+    }
+
+    .buy-now {
+        width: 100%; 
+        text-align: center; 
+    }
+}

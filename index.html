@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVNX</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="logo">EVNX.</div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="nav-links">
+            <a id="active" href="#">HOME</a>
+            <a href="#">BLOG</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="toggleDropdown(this)">CATEGORY</button>
+                <div class="dropdown-content">
+                    <a href="#"><img id="full-face" src="assets/header-svg/category1.svg" alt="Full Face Helmet"> Full Face Helmet</a>
+                    <a href="#"><img class="category" src="assets/header-svg/category2.svg" alt="Modular Helmet"> Modular Helmet</a>
+                    <a href="#"><img class="category" src="assets/header-svg/category3.svg" alt="Half Face Helmet"> Half Face Helmet</a>
+                </div>
+            </div>
+            <a href="#">CONTACTS</a>
+        </div>
+        <div class="nav-icons">
+            <div class="dropdown">
+                <button class="usd dropbtn">USD</button>
+            </div>
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="SEARCH">
+                <img class="search-icon" src="assets/header-svg/search.svg" alt="Search Icon">
+            </div>
+            <a href="#"><img class="right-icons" src="assets/header-svg/cart.svg" alt=""></a>
+            <a href="#"><img class="right-icons" src="assets/header-svg/account.svg" alt=""></a>
+        </div>
+    </nav>
+    
+
+    <!-- Landing Section -->
+    <div class="carousel">
+        <!-- Slide 1 -->
+        <div class="carousel-slide active">
+            <div class="hero">
+                <div class="hero-content-container">
+                    <div class="hero-content">
+                        <div class="hero-content-texts">
+                            <h1>Teixeira 
+                                <br>Adventure</h1>
+                            <p>Advanced Polycarbonate <br> Composite Shell</p>
+                        </div>
+                        <div class="hero-content-buttons">
+                            <div class="option-bar">
+                                <div class="option">
+                                    <span>COLOR</span>&nbsp;
+                                    <div class="color-circle" style="background-color: orange;"></div>
+                                </div>
+                                <div class="option">
+                                    <span>PRICE</span> &nbsp;
+                                    <span class="price">$125.9</span>
+                                </div>
+                                <div id = "product-button" class="option">
+                                    <span>View product</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="orange-bg">
+                    <img src="assets/orange-bg.png" class="mobile-vanish">
+                    <img src="assets/helmet.png" alt="EVNX | TEISEIRA ADVENTURE" class="helmet">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Slide 2 -->
+        <div class="carousel-slide">
+            <div class="hero">
+                <div class="hero-content-container">
+                    <div class="hero-content">
+                        <div class="hero-content-texts">
+                            <h1>Mountain <br>
+                                 Explorer</h1>
+                            <p>Premium Carbon Fiber <br> Protection</p>
+                        </div>
+                        <div class="hero-content-buttons">
+                            <div class="option-bar">
+                                <div class="option">
+                                    <span>COLOR</span> &nbsp;
+                                    <div class="color-circle" style="background-color: red;"></div>
+                                </div>
+                                <div class="option">
+                                    <span>PRICE</span> &nbsp;
+                                    <span class="price">$145.9</span>
+                                </div>
+                                <div id = "product-button" class="option">
+                                    <span>View product</span>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="orange-bg">
+                    <img src="assets/red-bg.png" class="mobile-vanish">
+                    <img src="assets/helmet2.png" alt="EVNX | Mountain Explorer" class="helmet">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Slide 3 -->
+        <div class="carousel-slide">
+            <div class="hero">
+                <div class="hero-content-container">
+                    <div class="hero-content">
+                        <div class="hero-content-texts">
+                            <h1>Urban <br>
+                                 Rider</h1>
+                            <p>Lightweight ABS Shell <br>
+                                 for Daily Commute</p>
+                        </div>
+                        <div class="hero-content-buttons">
+                            <div class="option-bar">
+                                <div class="option">
+                                    <span>COLOR</span> &nbsp;
+                                    <div class="color-circle" style="background-color: #D5D5D3;"></div>
+                                </div>
+                                <div class="option">
+                                    <span>PRICE</span> &nbsp;
+                                    <span class="price">$99.9</span>
+                                </div>
+                                <div id = "product-button" class="option">
+                                    <span>View product</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="orange-bg">
+                    <img src="assets/gray-bg.png" class="mobile-vanish">
+                    <img src="assets/helmet3.png" alt="EVNX | Urban Rider" id="helmet3" class="helmet">
+                </div>
+            </div>
+        </div>
+    
+        <!-- Carousel controls -->
+        <button class="carousel-control prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="carousel-control next"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    
+    <!-- Products Section -->
+    <div class="products-container">
+        <div class="section-header">
+            <span class="arrow-left">&larr;</span>
+            <h2 class="header-title">New Products</h2>
+            <span class="arrow-right">&rarr;</span>
+            <span class="background-number">01</span>
+        </div>
+        
+        <div class="product-carousel">
+            <div class="product-carousel-inner">
+                <!-- Card 1 -->
+                <div class="card expanded-card">
+                    <div class="card-info">
+                        <h1 class="card-title">HJC CL-17 CAPTAIN <br> AMERICA (SNELL)</h1>
+                        <div class="left-info">
+                            <h2 class="card-price">$350.5</h2>
+                            <a href="#" class="buy-now">BUY NOW</a>
+                        </div>
+                    </div>
+                    <img src="assets/products/Layer 11.png" alt="Product Image">
+                </div>
+        
+                <!-- Card 2 -->
+                <div class="card">
+                    <div class="card-info">
+                        <h1 class="card-title">Shoei RF-1200 <br> Helmet</h1>
+                        <div class="left-info">
+                            <h2 class="card-price">$485.0</h2>
+                            <a href="#" class="buy-now">BUY NOW</a>
+                        </div>
+                    </div>
+                    <img src="assets/helmet.png" class="big" alt="Product Image">
+                </div>
+        
+                <!-- Card 3 -->
+                <div class="card">
+                    <div class="card-info">
+                        <h1 class="card-title">Bell Qualifier DLX</h1>
+                        <div class="left-info">
+                            <h2 class="card-price">$239.95</h2>
+                            <a href="#" class="buy-now">BUY NOW</a>
+                        </div>
+                    </div>
+                    <img src="assets/helmet2.png" class="big" alt="Product Image">
+                </div>
+        
+                <!-- Card 4 -->
+                <div class="card">
+                    <div class="card-info">
+                        <h1 class="card-title">AGV K1 Helmet</h1>
+                        <div class="left-info">
+                            <h2 class="card-price">$199.95</h2>
+                            <a href="#" class="buy-now">BUY NOW</a>
+                        </div>
+                    </div>
+                    <img src="assets/helmet3.png" alt="Product Image">
+                </div>
+        
+                <!-- Card 5 -->
+                <div class="card">
+                    <div class="card-info">
+                        <h1 class="card-title">Nolan N87 Helmet</h1>
+                        <div class="left-info">
+                            <h2 class="card-price">$299.95</h2>
+                            <a href="#" class="buy-now">BUY NOW</a>
+                        </div>
+                    </div>
+                    <img src="assets/helmet4.png" alt="Product Image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Blogs and Events Section -->
+    <div class="content-section">
+        <!-- Left Column: Blog x Events -->
+        <div class="blog-events-section">
+            <div class="blog-section-header">
+                <h2>Blog x Events</h2>
+                <a href="#" class="see-all">See All</a>
+            </div>
+            <div class="blog-event-item">
+                <img src="assets/blog1.png" alt="Event Image">
+                <div class="event-details">
+                    <p class="event-date">02/08/2017</p>
+                    <h3>Dennis wins Van Doren Invitational WSBC Champ.</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-event-item">
+                <img src="assets/blog2.png" alt="Event Image">
+                <div class="event-details">
+                    <p class="event-date">02/08/2017</p>
+                    <h3>Dennis wins Van Doren Invitational WSBC Champ.</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-event-item">
+                <img src="assets/Layer 13.png" alt="Event Image">
+                <div class="event-details">
+                    <p class="event-date">02/08/2017</p>
+                    <h3>Dennis wins Van Doren Invitational WSBC Champ.</h3>
+                    <a href="#" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+          <!-- Right Column: Promotional Image -->
+    <div class="promo-section">
+        <img src="assets/helmet4.png" class="promo-helmet" alt="ENVX">
+        <div class="promo-overlay"></div>
+        <div class="promo-content">
+            <h2>AGV <br> Best <br> Sellers</h2>
+            <hr class="custom-line">
+            <p>See our most popular products</p>
+            <a href="#" class="shop-now">Shop Now</a>
+        </div>
+    </div>
+    </div>
+
+    <script src="main.js"></script>
+    </script>
+</body>
+</html>
